@@ -8,4 +8,4 @@ This is the code to make a plugin method which adds two numbers together.
   - Level: Advanced
   
   Youtube video:
-[![Xojo Plugin Creation from Scratch](https://github.com/eugenedakin/CaesarCipher/blob/main/CaesarCipherYoutubeScreenGrab.png)]( https://youtu.be/3IFFxURbbTA)
+[![Xojo Plugin Creation from Scratch](https://github.com/eugenedakin/2022XojoPlugin/blob/main/PluginScreen.png)]( https://youtu.be/3IFFxURbbTA)
