@@ -5,6 +5,7 @@
 *.xojo_binary_code linguist-language=Xojo
 *.cpp linguist-language=C++
 *.h linguist-language=C++
+dist/* linguist-vendored=false
 
 Builds*
 *.debug
