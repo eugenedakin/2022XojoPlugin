@@ -50,3 +50,5 @@ void PluginEntry(void) {
 	REALRegisterModule(&AddTwodefn);
 }
 ```
+
+The file: AddTwonNum.dll can be downloaded and placed in the Xojo 2022 r1.1 plugin folder.
