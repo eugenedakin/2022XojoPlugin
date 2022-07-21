@@ -15,6 +15,7 @@ Instructions:
 - Install Xojo 2022 r 1.1
 - Run the .sln program in Visual Studio 2022 to create the dll
 - Place the DLL in the Xojo plugin folder
+- Run the AddTwoApp.xojo_binary_project
 
 AddTwoNum.h file
 ```C++
@@ -51,4 +52,14 @@ void PluginEntry(void) {
 }
 ```
 
-The file: AddTwonNum.dll can be downloaded and placed in the Xojo 2022 r1.1 plugin folder.
+The file: AddTwoNum.dll can be downloaded and placed in the Xojo 2022 r1.1 plugin folder.
+
+```xojo
+Sub Pressed() Handles Pressed
+  //Use the AddTwoDLL.AddTwo method 
+  //in the plugin
+  Var answer As Integer
+  answer = AddTwoDLL.AddTwo(6, 3)
+  Label1.Text = answer.ToString
+End Sub
+```
