@@ -17,7 +17,7 @@ Instructions:
 - Place the DLL in the Xojo plugin folder
 
 AddTwoNum.h file
-```
+```C++
 #include "WinHeader++.h"
 #include "rb_plugin.h"
 
@@ -30,7 +30,7 @@ REALmethodDefinition TestModuleMethods[] = {
 ```
 
 AddTwoNum.cpp file
-```
+```C++
 #include "AddTwoNum.h"
 
 int AddTwo(int x, int y) {
