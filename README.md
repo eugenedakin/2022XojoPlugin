@@ -16,6 +16,7 @@ Instructions:
 - Run the .sln program in Visual Studio 2022 to create the dll
 - Place the DLL in the Xojo plugin folder
 
+AddTwoNum.h file
 ```
 #include "WinHeader++.h"
 #include "rb_plugin.h"
@@ -26,4 +27,26 @@ int AddTwo(int x, int y);
 REALmethodDefinition TestModuleMethods[] = {
 	{ (REALproc)AddTwo, REALnoImplementation, "AddTwo(x as integer, y as integer) as integer", REALconsoleSafe },
 };
+```
+
+AddTwoNum.cpp file
+```
+#include "AddTwoNum.h"
+
+int AddTwo(int x, int y) {
+	return x + y;
+}
+
+REALmoduleDefinition AddTwodefn = {
+	kCurrentREALControlVersion,
+	"AddTwoDLL", //name of module shown to user
+	TestModuleMethods, //method names
+	sizeof(TestModuleMethods) / sizeof(REALmethodDefinition), //size of methods
+	nil, //no constants
+	nil, //no properties
+};
+
+void PluginEntry(void) {
+	REALRegisterModule(&AddTwodefn);
+}
 ```
