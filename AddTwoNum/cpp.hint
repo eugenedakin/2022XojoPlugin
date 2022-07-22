@@ -1,2 +1,0 @@
-#define ADDTWONUM_API __declspec(dllexport)
-#define ADDTWONUM_API __declspec(dllimport)
