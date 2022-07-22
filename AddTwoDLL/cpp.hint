@@ -1,0 +1,2 @@
+#define ADDTWODLL_API __declspec(dllexport)
+#define ADDTWODLL_API __declspec(dllimport)
