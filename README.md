@@ -1,5 +1,7 @@
 # 2022XojoPlugin
-Make a Xojo 2022 r1.1 plugin from scratch using Visual Studio 2022 in Windows
+Make a Xojo 2022 r1.1 plugin from scratch using Visual Studio 2022 in Windows.
+
+Update which uses RBInteger instead of C++ Int to increase stability.
 
 This is the code to make a plugin method which adds two numbers together. 
   - Compatible with Windows 11
@@ -22,8 +24,7 @@ AddTwoNum.h file
 #include "WinHeader++.h"
 #include "rb_plugin.h"
 
-int AddTwo(int x, int y);
-
+RBInteger AddTwo(RBInteger x, RBInteger y);
 
 REALmethodDefinition TestModuleMethods[] = {
 	{ (REALproc)AddTwo, REALnoImplementation, "AddTwo(x as integer, y as integer) as integer", REALconsoleSafe },
@@ -34,7 +35,7 @@ AddTwoNum.cpp file
 ```C++
 #include "AddTwoNum.h"
 
-int AddTwo(int x, int y) {
+RBInteger AddTwo(RBInteger x, RBInteger y) {
 	return x + y;
 }
 
@@ -57,10 +58,8 @@ The file: AddTwoNum.dll can be downloaded and placed in the Xojo 2022 r1.1 plugi
 Xojo code
 ```xojo
 Sub Pressed() Handles Pressed
-  //Use the AddTwoDLL.AddTwo method 
-  //in the plugin
-  Var answer As Integer
-  answer = AddTwoDLL.AddTwo(6, 3)
-  Label1.Text = answer.ToString
+  Var Answer As Integer
+  Answer = AddTwoDLL.AddTwo(4,9)
+  Label1.Text = Answer.ToString
 End Sub
 ```
