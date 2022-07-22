@@ -10,7 +10,7 @@ This is the code to make a plugin method which adds two numbers together.
   - Level: Advanced
   
   Youtube video:
-[![Xojo Plugin Creation from Scratch](https://github.com/eugenedakin/2022XojoPlugin/blob/main/PluginScreen.png)](https://youtu.be/Ap3Ufre_RXk)
+[![Xojo Plugin Creation from Scratch](https://github.com/eugenedakin/2022XojoPlugin/blob/main/PluginScreenUpdated.png)](https://youtu.be/Ap3Ufre_RXk)
 
 Instructions:
 - Install Visual Studio 2022 community edition
