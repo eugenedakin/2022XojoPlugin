@@ -19,7 +19,7 @@ Instructions:
 - Place the DLL in the Xojo plugin folder
 - Run the AddTwoApp.xojo_binary_project
 
-AddTwoNum.h file
+AddTwoDLL.h file
 ```C++
 #include "WinHeader++.h"
 #include "rb_plugin.h"
@@ -31,9 +31,9 @@ REALmethodDefinition TestModuleMethods[] = {
 };
 ```
 
-AddTwoNum.cpp file
+AddTwoDLL.cpp file
 ```C++
-#include "AddTwoNum.h"
+#include "AddTwoDLL.h"
 
 RBInteger AddTwo(RBInteger x, RBInteger y) {
 	return x + y;
