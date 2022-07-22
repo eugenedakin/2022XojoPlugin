@@ -17,6 +17,7 @@ Instructions:
 - Install Xojo 2022 r 1.1
 - Run the .sln program in Visual Studio 2022 to create the dll
 - Place the DLL in the Xojo plugin folder
+- Restart Xojo IDE
 - Run the AddTwoApp.xojo_binary_project
 
 AddTwoDLL.h file
